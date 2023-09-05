@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap");
+
+/* shared style */
+:root {
+  --text-color-special: #ff42a5;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+/* header style */
+header {
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+header h2 > span {
+  color: var(--text-color-special);
+}
+header .title-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+header .title-container img {
+  width: 86px;
+  height: 40px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #3c354f;
+}
+
+nav > ul {
+  display: flex;
+  gap: 32px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+}
+
+.follow-us {
+  padding: 20px 25px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: aliceblue;
+}
+
+/* Responsive for Small device */
+
+@media screen and (max-width: 576px) {
+  /* header */
+
+  header {
+    flex-direction: column;
+  }
+  nav > ul {
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+  }
+}
+
+/* Responsive for Medium device */
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  /* header */
+
+  header {
+    flex-direction: column;
+  }
+  nav > ul {
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+  }
+}
