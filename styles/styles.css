@@ -2,7 +2,8 @@
 
 /* shared style */
 :root {
-  --text-color-special: #ff42a5;
+  --color-pink: #ff42a5;
+  --color-blue: #4ec5f7;
 }
 * {
   margin: 0;
@@ -10,7 +11,25 @@
   box-sizing: border-box;
   font-family: "Work Sans", sans-serif;
 }
+.btn-pink {
+  border: 0;
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 600;
+  padding: 20px 40px;
+  border-radius: 50px;
+  background-color: var(--color-pink);
+}
 
+.btn-blue {
+  border: 0;
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 600;
+  padding: 20px 40px;
+  border-radius: 50px;
+  background-color: var(--color-blue);
+}
 /* header style */
 header {
   padding: 30px 0;
@@ -23,7 +42,7 @@ header h2 {
   font-weight: 700;
 }
 header h2 > span {
-  color: var(--text-color-special);
+  color: var(--color-pink);
 }
 header .title-container {
   display: flex;
@@ -61,6 +80,47 @@ nav > ul {
   background-color: aliceblue;
 }
 
+/* Banner style */
+
+.banner {
+  background-image: url("../images/Group\ 14.png");
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.banner-content h3 {
+  color: #0b0223;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.banner-content h1 {
+  margin-bottom: 20px;
+  font-size: 6rem;
+  font-weight: 800;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.banner-content p {
+  color: #534c64;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.banner-content > .btn-group {
+  margin-top: 40px;
+  display: flex;
+  gap: 1.5rem;
+}
+.banner-img img {
+  width: 100%;
+}
+
 /* Responsive for Small device */
 
 @media screen and (max-width: 576px) {
@@ -73,6 +133,16 @@ nav > ul {
     flex-direction: column;
     margin-top: 20px;
     gap: 20px;
+  }
+
+  /* Banner */
+  .banner {
+    flex-direction: column-reverse;
+    gap: 100px;
+  }
+
+  .banner-content {
+    padding: 30px;
   }
 }
 
@@ -88,5 +158,11 @@ nav > ul {
     flex-direction: column;
     margin-top: 20px;
     gap: 20px;
+  }
+
+  /* Banner */
+  .banner {
+    flex-direction: column-reverse;
+    gap: 100px;
   }
 }
