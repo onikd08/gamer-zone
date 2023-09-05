@@ -48,7 +48,8 @@ header h2 {
   font-size: 3rem;
   font-weight: 700;
 }
-header h2 > span {
+header h2 > span,
+footer h2 > span {
   color: var(--color-pink);
 }
 header .title-container {
@@ -233,7 +234,35 @@ nav > ul {
   align-items: center;
   justify-content: center;
 }
+footer {
+  padding: 120px 0;
+  color: white;
+  margin-top: 200px;
+  background-color: #0b0223;
+}
 
+footer .logo,
+nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+footer nav > ul > li > a {
+  color: #fff;
+}
+
+footer .important-links > nav > ul > small > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* Responsive for Small device */
 
 @media screen and (max-width: 576px) {
