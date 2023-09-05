@@ -169,6 +169,38 @@ nav > ul {
   cursor: pointer; /* Show a pointer cursor when hovering */
 }
 
+/* instant play */
+.instant-play {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.instant-play .content > h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: right;
+  margin-bottom: 75px;
+}
+.instant-play .content > p {
+  color: #534c64;
+  font-size: 1.15rem;
+  font-weight: 400;
+  text-align: right;
+  margin-bottom: 75px;
+}
+.instant-play > .img-container {
+  position: relative;
+}
+.instant-play img-container > img {
+  width: 100%;
+}
+
+.overlay-img {
+  position: absolute;
+  top: 450px;
+  right: 450px;
+}
+
 /* Responsive for Small device */
 
 @media screen and (max-width: 576px) {
@@ -201,6 +233,15 @@ nav > ul {
   .game-collection-images img {
     width: 300px;
   }
+
+  /* Instant play */
+  .instant-play {
+    flex-direction: column;
+  }
+  .overlay-img {
+    top: 450px;
+    left: 200px;
+  }
 }
 
 /* Responsive for Medium device */
@@ -228,5 +269,14 @@ nav > ul {
   }
   .game-collection-images img {
     width: 300px;
+  }
+
+  /* Instant play */
+  .instant-play {
+    flex-direction: column;
+  }
+  .overlay-img {
+    top: 450px;
+    left: 200px;
   }
 }
