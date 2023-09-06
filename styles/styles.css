@@ -208,11 +208,11 @@ nav > ul {
   right: 80%;
 }
 
+/* Category style */
 .game-category {
   width: 100%;
   display: grid;
   gap: 20px;
-  border: 1px solid red;
   grid-template-columns: repeat(5, 1fr);
 }
 
